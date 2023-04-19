@@ -23,3 +23,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+.surprise {
+  background-color: #ececf1;
+  color: #000;
+  border-radius: 5px;
+}
