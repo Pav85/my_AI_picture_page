@@ -9,9 +9,13 @@ const App = () => {
   return (
     <div className="App">
       <section className="search-section">
-        <p>Enter detailed description of a picture 
+        <p>Enter detailed description of a picture  
           <span className="surprise">Surprise me</span>
           </p>
+        <div className="input-container">
+          <input />
+          <button>Generate</button>
+        </div>
       </section>
       <section className="image-section"></section>
     </div>
