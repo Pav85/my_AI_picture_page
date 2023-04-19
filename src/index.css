@@ -47,4 +47,26 @@ body {
   box-sizing: border-box;
   font-size: 15px;
   outline: none;
+  width: 90%;
+  font-weight: 200;
+}
+
+.input-container input::placeholder {
+  color: #cacaca;
+  font-weight: 200;
+}
+
+.input-container button {
+  width: 10%;
+  border: none;
+  border-left: 1px #cacaca solid;
+  background-color: #fff;
+  color: #777;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-container button:active {
+  background-color: #cacaca;
 }
