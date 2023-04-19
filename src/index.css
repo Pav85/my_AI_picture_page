@@ -9,6 +9,12 @@ body {
   height: 100vh;
   background-color: #fafafc;
   color: #777;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 90vw;
 }
 
 .search-section {

@@ -7,7 +7,7 @@ const App = () => {
   ]
  
   return (
-    <div className="App">
+    <div className="app">
       <section className="search-section">
         <p>Enter detailed description of a picture  
           <span className="surprise">Surprise me</span>
