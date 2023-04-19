@@ -13,7 +13,7 @@ const App = () => {
           <span className="surprise">Surprise me</span>
           </p>
         <div className="input-container">
-          <input />
+          <input placeholder="Mona Lisa wearing sunglasses" />
           <button>Generate</button>
         </div>
       </section>
