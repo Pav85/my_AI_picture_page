@@ -9,9 +9,17 @@ const App = () => {
   const getImages = async() => {
     try {
       const options = {
-        method: "POST"
+        method: "POST",
+        body: JSON.stringify({
+          messsage: "BLUGH"
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
       }
       const response = await fetch('http://localhost:8000/images', options)
+      const data = await response.json()
+      console.log(data)
     } catch (error) {
       console.error(error)
     }
