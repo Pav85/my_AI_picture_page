@@ -9,18 +9,16 @@ require("dotenv").config();
 
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: process.env.API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
 app.post("/images", async (req, res) => {
-  const response = await openai.createImageEdit(
-    fs.createReadStream("otter.png"),
-    fs.createReadStream("mask.png"),
-    "A cute baby sea otter wearing a beret",
-    2,
-    "1024x1024"
-  );
+  const response = await openai.createImage({
+    prompt: "A cute baby sea otter",
+    n: 2,
+    size: "1024x1024",
+  });
 });
 
 app.listen(PORT, () => console.log("Your server is running on PORT " + PORT));
