@@ -5,6 +5,14 @@ const App = () => {
     "Dancing bear in a pink dress",
     "Realistic photo of Hitler playing chess with Jesus"
   ]
+
+  const getImages = async() => {
+    try {
+      const response = await fetch('http://localhost:8000/images', options)
+    } catch (error) {
+      console.error(error)
+    }
+  }
  
   return (
     <div className="app">
@@ -14,7 +22,7 @@ const App = () => {
           </p>
         <div className="input-container">
           <input placeholder="Mona Lisa wearing sunglasses" />
-          <button>Generate</button>
+          <button onClick={getImages}>Generate</button>
         </div>
       </section>
       <section className="image-section"></section>
