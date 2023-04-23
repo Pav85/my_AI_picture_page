@@ -8,6 +8,9 @@ const App = () => {
 
   const getImages = async() => {
     try {
+      const options = {
+        method: "POST"
+      }
       const response = await fetch('http://localhost:8000/images', options)
     } catch (error) {
       console.error(error)
